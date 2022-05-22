@@ -1,11 +1,8 @@
 <html>
 <head>
     <title>ćwiczenie 84 - kod</title>
-    <link rel="Stylesheet" type="text/css" href="css_stylesheet.css" />
-    <link rel="shortcut icon" href="icon.ico" />
     <style>
         p {
-            font-family: 'Anonymous Pro', monospace;
             font-size: 50px;
             color: white;
             margin: 10px;
@@ -19,18 +16,16 @@
                 <html>
                 <head>
                     <title> zadanie 84 </title>
-                    <link rel="Stylesheet" type="text/css" href="css_stylesheet.css" />
-                    <link rel="shortcut icon" href="icon.ico" />
                     <script language="JavaScript">
                         function Tusk_start() {
-                            start_fil = new Date();
-                            poczatek_fil = start_fil.getTime();
+                            start_tus = new Date();
+                            poczatek_tus = start_tus.getTime();
                         }
                         function Tusk_stop() {
-                            stop_fil = new Date();
-                            koniec_fil = stop_fil.getTime();
-                            roznica_fil = koniec_fil - poczatek_fil;
-                            pokaz1.innerHTML = roznica_fil / 1000 + " s";
+                            stop_tus = new Date();
+                            koniec_tus = stop_tus.getTime();
+                            roznica_tus = koniec_tus - poczatek_tus;
+                            pokaz1.innerHTML = roznica_tus / 1000 + " s";
                         }
                     </script>
                     <style>
@@ -48,8 +43,8 @@
                 </head>
                 <body>
                     <script language="JavaScript">
-                        dzis_fil = new Date();
-                        document.write("<br>Aktualny czas : ", dzis_fil.getHours(), ":", dzis_fil.getMinutes(), "<br>");
+                        dzis_tus = new Date();
+                        document.write("<br>Aktualny czas : ", dzis_tus.getHours(), ":", dzis_tus.getMinutes(), "<br>");
                     </script>
                     <input type="button" name="Button1" value="START" onclick="filipowicz_start()">
                     <input type="button" name="Button2" value="STOP" onclick="filipowicz_stop()">
